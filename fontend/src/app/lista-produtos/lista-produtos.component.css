@@ -1,0 +1,28 @@
+.card-img-top {
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+  transform: scale(0.9);
+}
+
+.card {
+  display: grid;
+  max-height: 700px;
+  min-height: 700px;
+}
+
+.btn btn-dark btn-lg {
+  margin-right: 10px;
+  margin-left: 100px;
+}
+
+.link-card {
+  text-decoration: none;
+  color: black;
+}
+
+.button{
+  color: #ff087f;
+}

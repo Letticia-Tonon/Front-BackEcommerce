@@ -1,0 +1,15 @@
+.text-right{
+  text-align: right;
+}
+
+.botao{
+ margin: 15px;
+}
+
+.container{
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-decoration-none{
+  color: black;
+}

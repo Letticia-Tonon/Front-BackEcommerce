@@ -1,0 +1,47 @@
+<div class="form-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6">
+                <div class="form-container">
+                    <h3 class="title">Crie sua conta</h3>
+                    <form class="form-horizontal" id="registroForm">
+                        <div class="form-group">
+                            <input type="text" [(ngModel)]="obj.nome" name="nome" class="form-control" id="nome"
+                                placeholder="Digite seu primeiro nome" required><br>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" [(ngModel)]="obj.sobrenome" name="sobrenome" class="form-control"
+                                id="sobrenome" placeholder="Digite seu sobrenome" required><br>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" [(ngModel)]="obj.cpf" name="cpd" class="form-control" id="cpf"
+                                placeholder="Digite seu CPF: Apenas numeros" required><br>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" [(ngModel)]="obj.email" name="email" class="form-control" id="email"
+                                placeholder="Digite seu email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                required> <br>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" [(ngModel)]="obj.telefone" name="telefone" class="form-control"
+                                id="telefone" placeholder="DDD+numero: Apenas numeros"><br>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="password" [(ngModel)]="obj.senha" name="senha" class="form-control" id="senha"
+                                placeholder="Digite sua senha"><br>
+                                <input type="password" class="form-control" id="senhaConfirmacao"
+                                placeholder="Digite sua senha novamente">
+                        </div>
+
+                        <button (click)="gravar()" class="btn signup" id="botaoCadastrar">Cadastrar</button>
+                    </form>
+                    <div class="form-cadastro">
+                        <span class="cadastro_conta"><a routerLink="/login">Voltar para a página de login</a></span>
+                        <span class="home"><a routerLink="/">Voltar para a página de inicial</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

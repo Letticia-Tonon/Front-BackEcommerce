@@ -1,0 +1,68 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Sacola de Compras</title>
+</head>
+
+<body>
+    <main> -->
+        <div class="container">
+            
+            <div class="alert alert-info" *ngIf="mensagem.length>0">{{mensagem}}</div>
+            <h1>Sacola</h1>
+            <ul class="list-group mb-3">
+                <div *ngFor="let produto of carrinhoItens">
+                    <li class="list-group-item py-3">
+                        <div class="row g3">
+                            <div class="col-4 col-md-3 col-lg-2">
+                                <a href="#">
+                                    <img src="{{ produto.link_foto }}" class="img-thumbnail" alt="">
+                                </a>
+                            </div>
+                            <div class="col-8 col-md-9 col-lg-7 col-xl-8 text-left align-self-center">
+                                <h4> <b> <a href="#" class="text-decoration-none">{{produto.nome_produto}}</a></b></h4>
+                                <h4>
+                                    <small>{{produto.descricao_curta}}</small>
+                                </h4>
+                            </div>
+                            <div
+                                class="col-6 offset-6 col-sm-6 offset-sm-6 col-md-4 offset-md-8 col-lg-3 offset-lg-0 col-xl-2 align-self-center mt-3">
+                                <div class="text-right mt-2">
+                                    <label for="produto-quantidade">Quantidade: {{produto.quantidade}}</label>
+                                    <br>
+                                    <small class="text-secondary"> Preço: {{produto.preco|currency:'BRL' }}</small>
+                                    <br>
+                                    <span class="text-dark"> Valor item: {{(produto.preco *
+                                        produto.quantidade)|currency:'BRL' }}</span>
+                                    <br>
+                                    <form (submit)="remover(produto.id)">
+                                        <button type="submit" class="btn btn-outline-dark btn-sm">
+                                            <i class="fa-regular fa-trash-can"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+                <li class="list-group-item py-3">
+                    <div class="text-right">
+                        <h4 class="text-dark mb-3">Valor Total: {{total|currency:'BRL'}}</h4>
+                        <div class="botao">
+                            <a href="/produtos" class="btn btn-outline-success btn-lg"> Continuar comprando</a>
+                            <form (submit)="gravar()">
+                                <button type="submit" class="btn btn-outline-secondary btn-lg">Fechar Compra</button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    <!-- </main>
+</body>
+</html> -->

@@ -1,0 +1,39 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Produto</title>
+</head>
+
+<!-- <img src="./assets/produto{{produto.id}}.jpg" width="100px" *ngIf="produto.id>0"><br> -->
+<br>
+
+<section class="container">
+    <figure class="col-md-4">
+        <img src="{{ produto.link_foto }}" class="img-fluid rounded" alt="creme demaquilante">
+    </figure>
+
+    <section class="col-md-5">
+        <article class="produto-detalhe">
+            <h1>{{ produto.nome_produto }}</h1>
+            <p>{{ produto.descricao_longa }}</p>
+        </article>
+
+        <article class="produto-preco">
+            <div class="produto-star"></div>
+            <strong>
+                {{ produto.preco | currency: 'BRL' }}
+                <span class="d-block"> Em até 12x sem juros</span>
+            </strong>
+            <div></div>
+
+            <br>
+
+            <form #form="ngForm" (submit)="adicionarAoCarrinho()">
+                <button type="submit" class="btn btn-outline-success card-link col-md-12">Comprar</button>
+            </form>
+
+        </article>
+    </section>
+</section>
+<!--  -->

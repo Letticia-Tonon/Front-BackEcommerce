@@ -1,0 +1,225 @@
+.form-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-left: 30%;
+  }
+  .form-container {
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px -15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    margin: 0 auto; 
+    width: 450px; 
+  }
+  .form-container:before,
+  .form-container:after{
+    content: '';
+    background-color: #3b3939;
+    height: 50%;
+    width: 4px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+  .form-container:after{
+    top: auto;
+    bottom: 10px;
+    left: auto;
+    right: 10px;
+  }
+  .form-container .title{
+    color: #ff087f;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 0 0 15px;
+  }
+  .form-container .social-links{
+    padding: 0;
+    margin: 0 0 15px;
+    list-style: none;
+  }
+  .form-container .social-links li{
+    display: inline-block;
+    margin: 0 3px;
+  }
+  .form-container .social-links li a{
+    color: #555;
+    line-height: 27px;
+    height: 28px;
+    width: 28px;
+    border: 1px solid #555;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.3s ease 0s;
+  }
+  .form-container .social-links li a:hover{
+    color: #fff;
+    background-color: #4E4C97;
+  }
+  .form-container .description{
+    color: #7c7979;
+    font-size: 14px;
+    margin: 20px 20px 20px;
+    display: block;
+    font-weight: bold;
+  }
+  .form-horizontal .form-group{ margin: 0 0 15px; }
+  .form-horizontal .form-group:last-of-type{
+    text-align: left;
+    margin-bottom: 35px;
+    margin-top: 40px;
+  }
+  .form-horizontal .form-control{
+    color: #4E4C97;
+    background: #F7F8F9;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    height: 30px;
+    width: 400px;
+    padding: 6px 14px;
+    border-radius: 10px;
+    border: 2px solid #F2F5F6;
+    box-shadow: none;
+  }
+  .form-horizontal .form-control:focus{
+    border-color: rgba(78, 76, 151, 0.5);
+    box-shadow: none;
+  }
+  .form-horizontal .form-control::placeholder{
+    color:rgb(163, 157, 157);
+    font-size: 12px;
+    font-weight: 300;
+  }
+  .form-horizontal .form-group .check-label{
+    color: #555;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: none;
+    margin: -3.5px 4px 0;
+    vertical-align: text-top;
+    display: inline-block;
+  }
+  /* .form-horizontal .form-group .check-label a{
+    color: #FF087F;
+    transition: all 0.3s ease;
+  } */
+  .form-horizontal .form-group .check-label a:hover{ text-decoration: underline; }
+  .form-horizontal .checkbox{
+    height: 17px;
+    width: 17px;
+    min-height: auto;
+    margin: 0 0 2px 7px;
+    border: 1px solid #999;
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    transition: all 0.3s ease;
+  }
+  .form-horizontal .checkbox:before{
+    content: '';
+    height: 4px;
+    width: 12px;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    opacity: 1;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 2px;
+    top: 2.5px;
+    transition: all 0.3s ease;
+  }
+  .form-horizontal .checkbox:checked{
+    background-color: #4E4C97;
+    border-color: #FF087F;
+  }
+  .form-horizontal .checkbox:checked:before{ opacity: 1; }
+  .form-horizontal .checkbox:not(:checked):before{ opacity: 0; }
+  .form-horizontal .checkbox:focus{ outline: none; }
+  .form-horizontal .btn{
+    color: #fff;
+    background-color: #ff087f;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    width: 130px;
+    padding: 11px;
+    margin: 0 10px 10px 0;
+    border: 2px solid #ff087f;
+    border-radius: 15px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+  }
+  .form-horizontal .btn.signin{
+    color: #4E4C97;
+    background-color: #fff;
+  }
+  .form-horizontal .btn:hover,
+  .form-horizontal .btn:focus{
+    color: #4E4C97;
+    box-shadow: 0 0 5px #4E4C97, 0 0 15px #4E4C97 inset;
+  }
+  .form-horizontal .btn.signin:hover,
+  .form-horizontal .btn.signin:focus{
+    box-shadow: 0 0 5px #4E4C97;
+  }
+  .form-cadastro, .cadastro_conta{
+    color: #7c7979;
+    font-size: 14px;
+    margin: 20px 20px 20px;
+    display: block;
+    font-weight: bold;
+  }
+  .form-cadastro, .cadastro_conta a{
+    text-decoration: none;
+    color: #ff087f;
+  }
+  @media screen and (max-width: 600px) {
+    .form-bg {
+      margin-left: 0; /* Remova a margem esquerda para centralizar em telas menores */
+    }
+  
+    .form-container {
+      padding: 20px; /* Reduza o preenchimento para telas menores */
+      width: 90%; /* Defina a largura para 90% da largura da tela */
+    }
+  
+    /* Ajuste o tamanho do título */
+    .form-container .title {
+      font-size: 20px;
+    }
+  
+    /* Ajuste o tamanho do texto de descrição */
+    .form-container .description {
+      font-size: 12px;
+      margin: 10px 10px 10px;
+    }
+  
+    /* Ajuste a largura dos campos de entrada */
+    .form-horizontal .form-control {
+      width: 100%; /* Defina a largura para 100% da largura do contêiner */
+    }
+  
+    /* Ajuste o tamanho do botão */
+    .form-horizontal .btn {
+      width: 100%; /* Defina a largura para 100% da largura do contêiner */
+      margin: 10px 0; /* Adicione um espaço entre os botões */
+    }
+  
+    /* Ajuste o tamanho do link para voltar à página de login */
+    .form-cadastro, .cadastro_conta {
+      font-size: 12px;
+      margin: 10px 10px 10px;
+    }
+  }
